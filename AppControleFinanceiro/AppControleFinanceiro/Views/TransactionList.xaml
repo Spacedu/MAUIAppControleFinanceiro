@@ -11,5 +11,6 @@
             VerticalOptions="Center" />
 
         <Button Clicked="OnButtonClicked_To_TransactionAdd" Text="+" />
+        <Button Clicked="OnButtonClicked_To_TransactionEdit" Text="Edit" />
     </VerticalStackLayout>
 </ContentPage>

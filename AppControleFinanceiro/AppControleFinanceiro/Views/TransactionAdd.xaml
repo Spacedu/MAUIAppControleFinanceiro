@@ -41,7 +41,10 @@
 
         <Entry Margin="15,0" Placeholder="Valor" />
 
-        <Button Margin="15,0" Text="Salvar" />
+        <Button
+            Margin="15,0"
+            HorizontalOptions="Center"
+            Text="Salvar" />
 
     </VerticalStackLayout>
 </ContentPage>
