@@ -372,9 +372,20 @@
         </Setter>
     </Style>
 
+    <!--
+    Clara: #F3F4F1
+    Escuro: #D7D8D5
+    -->
     <Style ApplyToDerivedTypes="True" TargetType="Page">
         <Setter Property="Padding" Value="0" />
-        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Offset="0.0" Color="#F3F4F1" />
+                    <GradientStop Offset="1.0" Color="#D7D8D5" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <Style ApplyToDerivedTypes="True" TargetType="Shell">
