@@ -18,12 +18,16 @@
                     HorizontalOptions="Center"
                     Text="Atualizar"
                     TextColor="White" />
-                <Label
+                <Image
                     Grid.Row="0"
                     Grid.Column="1"
                     HorizontalOptions="Center"
-                    Text="X"
-                    TextColor="White" />
+                    Source="close.png"
+                    WidthRequest="17">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
             </Grid>
         </Border>
 
