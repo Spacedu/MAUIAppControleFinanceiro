@@ -8,7 +8,7 @@
         <Border
             Margin="15"
             Padding="15"
-            BackgroundColor="White"
+            BackgroundColor="Black"
             Stroke="Transparent"
             StrokeShape="RoundRectangle 30">
             <Grid ColumnDefinitions="*, 30" RowDefinitions="Auto">
@@ -16,12 +16,14 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     HorizontalOptions="Center"
-                    Text="Novo" />
+                    Text="Novo"
+                    TextColor="White" />
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"
                     HorizontalOptions="Center"
-                    Text="X" />
+                    Text="X"
+                    TextColor="White" />
             </Grid>
         </Border>
     </VerticalStackLayout>
