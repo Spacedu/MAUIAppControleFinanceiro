@@ -3,10 +3,15 @@
     x:Class="AppControleFinanceiro.Views.TransactionList"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:AppControleFinanceiro.Libraries.Converters"
     Title="Listagem"
     NavigationPage.HasNavigationBar="False">
     <ContentPage.Resources>
         <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
+        <ResourceDictionary>
+            <converters:TransactionValueConverter x:Key="TransactionValueConverter" />
+            <converters:TransactionValueColorConverter x:Key="TransactionValueColorConverter" />
+        </ResourceDictionary>
     </ContentPage.Resources>
     <VerticalStackLayout>
 
@@ -29,8 +34,8 @@
                         </VerticalStackLayout>
                         <Label
                             Grid.Column="2"
-                            Text="{Binding Value, StringFormat='{0:C}'}"
-                            TextColor="{StaticResource Tertiary}"
+                            Text="{Binding ., Converter={StaticResource TransactionValueConverter}}"
+                            TextColor="{Binding ., Converter={StaticResource TransactionValueColorConverter}}"
                             VerticalOptions="Center" />
                     </Grid>
                 </DataTemplate>
