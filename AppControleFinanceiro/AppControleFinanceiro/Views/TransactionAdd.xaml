@@ -26,7 +26,7 @@
                     Source="close.png"
                     WidthRequest="17">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerTapped_ToClose" />
                     </Image.GestureRecognizers>
                 </Image>
             </Grid>

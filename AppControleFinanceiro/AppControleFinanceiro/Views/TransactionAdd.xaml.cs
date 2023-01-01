@@ -14,7 +14,7 @@ public partial class TransactionAdd : ContentPage
         _repository = repository;
 	}
 
-    private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    private void TapGestureRecognizerTapped_ToClose(object sender, TappedEventArgs e)
     {
 		Navigation.PopModalAsync();
     }
