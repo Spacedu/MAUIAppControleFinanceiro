@@ -14,6 +14,9 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid Padding="15" ColumnDefinitions="50, *, Auto">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="TapGestureRecognizerTapped_To_TransactionEdit" />
+                        </Grid.GestureRecognizers>
                         <Label
                             BackgroundColor="White"
                             FontSize="20"
@@ -36,14 +39,6 @@
 
 
 
-
-        <Button
-            Clicked="OnButtonClicked_To_TransactionEdit"
-            HorizontalOptions="Center"
-            Text="Edit" />
-
-
-
         <Border
             Margin="10"
             Padding="10,15"
@@ -61,7 +56,6 @@
                     Grid.Row="1"
                     Margin="10,0"
                     FontSize="36"
-                    Text="R$ 2.760,00"
                     TextColor="White" />
                 <Button
                     Grid.RowSpan="2"
@@ -86,7 +80,6 @@
                     Grid.Row="4"
                     Margin="10,0"
                     FontSize="12"
-                    Text="R$ 3.600,00"
                     TextColor="White" />
 
                 <Label
@@ -100,7 +93,6 @@
                     Grid.Row="4"
                     Grid.Column="1"
                     FontSize="12"
-                    Text="R$ 840,00"
                     TextColor="White" />
             </Grid>
         </Border>

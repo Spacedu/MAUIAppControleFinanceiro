@@ -32,18 +32,28 @@
         </Border>
 
         <Grid Margin="30,0" ColumnDefinitions="*,*">
-            <RadioButton Content="Receita" IsChecked="True" />
             <RadioButton
+                x:Name="RadioIncome"
+                Content="Receita"
+                IsChecked="True" />
+            <RadioButton
+                x:Name="RadioExpense"
                 Grid.Column="1"
                 Content="Despesa"
                 HorizontalOptions="End" />
         </Grid>
 
-        <Entry Margin="15,0" Placeholder="Nome" />
+        <Entry
+            x:Name="EntryName"
+            Margin="15,0"
+            Placeholder="Nome" />
 
-        <DatePicker Margin="15,0" />
+        <DatePicker x:Name="DatePickerDate" Margin="15,0" />
 
-        <Entry Margin="15,0" Placeholder="Valor" />
+        <Entry
+            x:Name="EntryValue"
+            Margin="15,0"
+            Placeholder="Valor" />
 
         <Button
             Margin="15,0"
