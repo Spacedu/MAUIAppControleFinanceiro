@@ -1,5 +1,6 @@
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositories;
+using CommunityToolkit.Mvvm.Messaging;
 using System.Text;
 
 namespace AppControleFinanceiro.Views;
@@ -25,8 +26,8 @@ public partial class TransactionAdd : ContentPage
         
         SaveTransactionInDatabase();
 
-        //TODO - Fechar a Tela*
         Navigation.PopModalAsync();
+        WeakReferenceMessenger.Default.Send<string>(string.Empty);
 
         var count = _repository.GetAll().Count;
         App.Current.MainPage.DisplayAlert("Mensagem!", $"Existem {count} registro(s) no banco!", "OK");
