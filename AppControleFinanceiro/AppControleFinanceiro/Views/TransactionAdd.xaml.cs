@@ -61,7 +61,7 @@ public partial class TransactionAdd : ContentPage
             valid = false;
         }
         double result;
-        if (string.IsNullOrEmpty(EntryValue.Text) && !double.TryParse(EntryValue.Text, out result))
+        if (!string.IsNullOrEmpty(EntryValue.Text) && !double.TryParse(EntryValue.Text, out result))
         {
             sb.AppendLine("O campo 'Valor' é inválido!");
             valid = false;
@@ -70,6 +70,7 @@ public partial class TransactionAdd : ContentPage
 
         if(valid == false)
         {
+            LabelError.IsVisible = true;
             LabelError.Text = sb.ToString();
         }
         return valid;

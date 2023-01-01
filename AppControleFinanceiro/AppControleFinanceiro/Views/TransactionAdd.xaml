@@ -32,7 +32,11 @@
             </Grid>
         </Border>
 
-        <Label x:Name="LabelError" IsVisible="False" TextColor="Red" />
+        <Label
+            x:Name="LabelError"
+            Margin="30,0"
+            IsVisible="False"
+            TextColor="Red" />
         <Grid Margin="30,0" ColumnDefinitions="*,*">
             <RadioButton
                 x:Name="RadioIncome"
