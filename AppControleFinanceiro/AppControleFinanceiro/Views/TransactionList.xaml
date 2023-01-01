@@ -57,6 +57,7 @@
                     Text="Saldo"
                     TextColor="#979797" />
                 <Label
+                    x:Name="LabelBalance"
                     Grid.Row="1"
                     Margin="10,0"
                     FontSize="36"
@@ -81,6 +82,7 @@
                     Text="Receitas"
                     TextColor="#979797" />
                 <Label
+                    x:Name="LabelIncome"
                     Grid.Row="4"
                     Margin="10,0"
                     FontSize="12"
@@ -94,6 +96,7 @@
                     Text="Despesas"
                     TextColor="#979797" />
                 <Label
+                    x:Name="LabelExpense"
                     Grid.Row="4"
                     Grid.Column="1"
                     FontSize="12"
