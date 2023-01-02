@@ -9,6 +9,9 @@
     <ContentPage.Resources>
         <ResourceDictionary Source="/Resources/Styles/Colors.xaml" />
         <ResourceDictionary>
+            <converters:TransactionNameConverter x:Key="TransactionNameConverter" />
+            <converters:TransactionNameColorConverter x:Key="TransactionNameColorConverter" />
+
             <converters:TransactionValueConverter x:Key="TransactionValueConverter" />
             <converters:TransactionValueColorConverter x:Key="TransactionValueColorConverter" />
         </ResourceDictionary>
@@ -23,7 +26,7 @@
                             <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="TapGestureRecognizerTapped_To_TransactionEdit" />
                         </Grid.GestureRecognizers>
                         <Border
-                            BackgroundColor="White"
+                            BackgroundColor="{Binding Name, Converter={StaticResource TransactionNameColorConverter}}"
                             HeightRequest="40"
                             Stroke="Transparent"
                             StrokeShape="RoundRectangle 20"
@@ -32,10 +35,10 @@
                                 <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="TapGestureRecognizerTapped_ToDelete" />
                             </Border.GestureRecognizers>
                             <Label
-                                Margin="12,2"
+                                Margin="11,2"
                                 Padding="2"
                                 FontSize="20"
-                                Text="X" />
+                                Text="{Binding Name, Converter={StaticResource TransactionNameConverter}}" />
                         </Border>
                         <VerticalStackLayout Grid.Column="1">
                             <Label Text="{Binding Name}" />
