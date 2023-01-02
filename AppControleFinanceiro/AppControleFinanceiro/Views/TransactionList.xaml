@@ -80,7 +80,8 @@
                     Padding="0"
                     Clicked="OnButtonClicked_To_TransactionAdd"
                     CornerRadius="27"
-                    FontSize="48"
+                    FontSize="{OnPlatform Default=48,
+                                          Android=36}"
                     HeightRequest="54"
                     HorizontalOptions="Center"
                     Text="+"
