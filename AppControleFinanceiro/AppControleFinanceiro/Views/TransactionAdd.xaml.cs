@@ -1,6 +1,8 @@
+using AppControleFinanceiro.Libraries.Utils.FixBugs;
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositories;
 using CommunityToolkit.Mvvm.Messaging;
+using Microsoft.Maui.Platform;
 using System.Text;
 
 namespace AppControleFinanceiro.Views;
@@ -16,6 +18,7 @@ public partial class TransactionAdd : ContentPage
 
     private void TapGestureRecognizerTapped_ToClose(object sender, TappedEventArgs e)
     {
+        KeyboardFixBugs.HideKeyboard();
         Navigation.PopModalAsync();
     }
 
@@ -26,7 +29,9 @@ public partial class TransactionAdd : ContentPage
 
         SaveTransactionInDatabase();
 
+        KeyboardFixBugs.HideKeyboard();
         Navigation.PopModalAsync();
+        
         WeakReferenceMessenger.Default.Send<string>(string.Empty);
     }
 

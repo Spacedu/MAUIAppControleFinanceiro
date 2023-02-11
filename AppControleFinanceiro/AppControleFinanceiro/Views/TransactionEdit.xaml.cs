@@ -1,3 +1,4 @@
+using AppControleFinanceiro.Libraries.Utils.FixBugs;
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositories;
 using CommunityToolkit.Mvvm.Messaging;
@@ -29,6 +30,7 @@ public partial class TransactionEdit : ContentPage
     }
     private void TapGestureRecognizerTapped_ToClose(object sender, TappedEventArgs e)
     {
+        KeyboardFixBugs.HideKeyboard();
         Navigation.PopModalAsync();
     }
     private void OnButtonClicked_Save(object sender, EventArgs e)
@@ -38,6 +40,7 @@ public partial class TransactionEdit : ContentPage
 
         SaveTransactionInDatabase();
 
+        KeyboardFixBugs.HideKeyboard();
         Navigation.PopModalAsync();
         WeakReferenceMessenger.Default.Send<string>(string.Empty);
     }
