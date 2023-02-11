@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="AppControleFinanceiro.Views.TransactionList"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -16,7 +16,7 @@
             <converters:TransactionValueColorConverter x:Key="TransactionValueColorConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <VerticalStackLayout>
+    <Grid RowDefinitions="*, 180">
 
         <CollectionView x:Name="CollectionViewTransactions">
             <CollectionView.ItemTemplate>
@@ -56,7 +56,7 @@
 
 
 
-        <Border
+        <Border Grid.Row="1"
             Margin="10"
             Padding="10,15"
             BackgroundColor="{StaticResource Black}"
@@ -114,5 +114,5 @@
                     TextColor="White" />
             </Grid>
         </Border>
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

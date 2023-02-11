@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="AppControleFinanceiro.Views.TransactionAdd"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -40,12 +40,12 @@
         <Grid Margin="30,0" ColumnDefinitions="*,*">
             <RadioButton
                 x:Name="RadioIncome"
-                Content="Receita"
+                Content=" Receita"
                 IsChecked="True" />
             <RadioButton
                 x:Name="RadioExpense"
                 Grid.Column="1"
-                Content="Despesa"
+                Content=" Despesa"
                 HorizontalOptions="End" />
         </Grid>
 
@@ -54,7 +54,7 @@
             Margin="15,0"
             Placeholder="Nome" />
 
-        <DatePicker x:Name="DatePickerDate" Margin="15,0" />
+        <DatePicker x:Name="DatePickerDate" Margin="{OnPlatform Default='15,0',  MacCatalyst='15, 15, 15, 0'}" />
 
         <Entry
             x:Name="EntryValue"

@@ -1,6 +1,8 @@
+using AppControleFinanceiro.Libraries.Utils.FixBugs;
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositories;
 using CommunityToolkit.Mvvm.Messaging;
+using Microsoft.Maui.Platform;
 using System.Text;
 
 namespace AppControleFinanceiro.Views;
@@ -9,24 +11,27 @@ public partial class TransactionAdd : ContentPage
 {
     private ITransactionRepository _repository;
     public TransactionAdd(ITransactionRepository repository)
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         _repository = repository;
-	}
+    }
 
     private void TapGestureRecognizerTapped_ToClose(object sender, TappedEventArgs e)
     {
-		Navigation.PopModalAsync();
+        KeyboardFixBugs.HideKeyboard();
+        Navigation.PopModalAsync();
     }
 
     private void OnButtonClicked_Save(object sender, EventArgs e)
     {
         if (IsValidData() == false)
             return;
-        
+
         SaveTransactionInDatabase();
 
+        KeyboardFixBugs.HideKeyboard();
         Navigation.PopModalAsync();
+        
         WeakReferenceMessenger.Default.Send<string>(string.Empty);
     }
 
@@ -48,7 +53,7 @@ public partial class TransactionAdd : ContentPage
         bool valid = true;
         StringBuilder sb = new StringBuilder();
 
-        if(string.IsNullOrEmpty(EntryName.Text) || string.IsNullOrWhiteSpace(EntryName.Text))
+        if (string.IsNullOrEmpty(EntryName.Text) || string.IsNullOrWhiteSpace(EntryName.Text))
         {
             sb.AppendLine("O campo 'Nome' deve ser preenchido!");
             valid = false;
@@ -61,12 +66,12 @@ public partial class TransactionAdd : ContentPage
         double result;
         if (!string.IsNullOrEmpty(EntryValue.Text) && !double.TryParse(EntryValue.Text, out result))
         {
-            sb.AppendLine("O campo 'Valor' È inv·lido!");
+            sb.AppendLine("O campo 'Valor' inv√°lido!");
             valid = false;
         }
 
 
-        if(valid == false)
+        if (valid == false)
         {
             LabelError.IsVisible = true;
             LabelError.Text = sb.ToString();
