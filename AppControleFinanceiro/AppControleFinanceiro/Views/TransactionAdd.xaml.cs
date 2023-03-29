@@ -42,7 +42,7 @@ public partial class TransactionAdd : ContentPage
             Type = RadioIncome.IsChecked ? TransactionType.Income : TransactionType.Expense,
             Name = EntryName.Text,
             Date = DatePickerDate.Date,
-            Value = double.Parse(EntryValue.Text)
+            Value = Math.Abs(double.Parse(EntryValue.Text))
         };
 
         _repository.Add(transaction);
