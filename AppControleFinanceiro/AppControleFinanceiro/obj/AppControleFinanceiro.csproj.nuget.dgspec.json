@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elias\\OneDrive\\Documents\\GitHub\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj": {}
+    "C:\\Users\\elias\\OneDrive\\Desktop\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elias\\OneDrive\\Documents\\GitHub\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj": {
+    "C:\\Users\\elias\\OneDrive\\Desktop\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elias\\OneDrive\\Documents\\GitHub\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj",
+        "projectUniqueName": "C:\\Users\\elias\\OneDrive\\Desktop\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj",
         "projectName": "AppControleFinanceiro",
-        "projectPath": "C:\\Users\\elias\\OneDrive\\Documents\\GitHub\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj",
+        "projectPath": "C:\\Users\\elias\\OneDrive\\Desktop\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj",
         "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elias\\OneDrive\\Documents\\GitHub\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\obj\\",
+        "outputPath": "C:\\Users\\elias\\OneDrive\\Desktop\\MAUIAppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
