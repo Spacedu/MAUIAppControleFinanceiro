@@ -35,7 +35,8 @@
             x:Name="LabelError"
             Margin="30,0"
             IsVisible="False"
-            TextColor="Red" />
+            TextColor="{AppThemeBinding Light=Red,
+                                        Dark='#F37474'}" />
         <Grid Margin="30,0" ColumnDefinitions="*,*">
             <RadioButton
                 x:Name="RadioIncome"
@@ -53,7 +54,7 @@
             Margin="15,0"
             Placeholder="Nome" />
 
-        <DatePicker x:Name="DatePickerDate" Margin="{OnPlatform Default='15,0',  MacCatalyst='15, 15, 15, 0'}" />
+        <DatePicker x:Name="DatePickerDate" Margin="{OnPlatform Default='15,0', MacCatalyst='15, 15, 15, 0'}" />
 
         <Entry
             x:Name="EntryValue"

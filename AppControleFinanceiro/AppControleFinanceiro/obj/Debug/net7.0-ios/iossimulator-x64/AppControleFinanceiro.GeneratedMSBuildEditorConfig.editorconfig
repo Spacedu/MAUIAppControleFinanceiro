@@ -8,39 +8,39 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppControleFinanceiro
-build_property.ProjectDir = C:\Users\elias\OneDrive\Desktop\MAUIAppControleFinanceiro\AppControleFinanceiro\AppControleFinanceiro\
+build_property.ProjectDir = C:\Users\elias\OneDrive\Documents\GitHub\MAUIAppControleFinanceiro\AppControleFinanceiro\AppControleFinanceiro\
 
-[C:/Users/elias/OneDrive/Desktop/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/App.xaml]
+[C:/Users/elias/OneDrive/Documents/GitHub/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppControleFinanceiro.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/elias/OneDrive/Desktop/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Resources/Styles/Colors.xaml]
+[C:/Users/elias/OneDrive/Documents/GitHub/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppControleFinanceiro.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/elias/OneDrive/Desktop/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Resources/Styles/Styles.xaml]
+[C:/Users/elias/OneDrive/Documents/GitHub/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppControleFinanceiro.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/elias/OneDrive/Desktop/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Views/TransactionAdd.xaml]
+[C:/Users/elias/OneDrive/Documents/GitHub/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Views/TransactionAdd.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppControleFinanceiro.Views.TransactionAdd.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\TransactionAdd.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\TransactionAdd.xaml
 
-[C:/Users/elias/OneDrive/Desktop/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Views/TransactionEdit.xaml]
+[C:/Users/elias/OneDrive/Documents/GitHub/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Views/TransactionEdit.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppControleFinanceiro.Views.TransactionEdit.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\TransactionEdit.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\TransactionEdit.xaml
 
-[C:/Users/elias/OneDrive/Desktop/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Views/TransactionList.xaml]
+[C:/Users/elias/OneDrive/Documents/GitHub/MAUIAppControleFinanceiro/AppControleFinanceiro/AppControleFinanceiro/Views/TransactionList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppControleFinanceiro.Views.TransactionList.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\TransactionList.xaml
