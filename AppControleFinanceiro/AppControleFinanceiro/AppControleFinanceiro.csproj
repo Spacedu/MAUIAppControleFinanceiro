@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#000000" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#000000" BaseSize="193,180" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#000000" BaseSize="247,247" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -51,8 +51,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
-		<PackageReference Include="LiteDB" Version="5.0.15" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+		<PackageReference Include="LiteDB" Version="5.0.16" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
